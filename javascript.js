@@ -18,4 +18,5 @@ function changeSpacesToUnderScores(str)
 }
 str=changeSpacesToUnderScores(str);
 //window.print("output:- "+str); This command is printing the current page, a window got opened to save as pdf.
-alert("output:- "+str);
+alert("output is below :) ");
+alert(str);
