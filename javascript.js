@@ -17,4 +17,4 @@ function changeSpacesToUnderScores(str)
   return str;
 }
 str=changeSpacesToUnderScores(str);
-println("output:- "+str);
+window.print("output:- "+str);
