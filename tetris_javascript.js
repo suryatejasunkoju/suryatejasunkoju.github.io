@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     alert("Open this game from laptop/desktop only.");
+    alert("Game Controls: 1)Up Arrow-rotation, 2)downArrow-moving down,3)left Arrow-moving left, 4)right arrow-moving right");
     const grid = document.querySelector('.grid')
     let squares = Array.from(document.querySelectorAll('.grid div'))
     const scoreDisplay = document.querySelector('#score')
