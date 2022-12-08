@@ -1,0 +1,305 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0px;
+    width:100%;
+}
+section{
+    height: 100vh;
+    background-color: #1c1d25;
+    border:solid white 1px;
+    /*line-wwidth, border-color, border-width*/
+}
+.hero{
+    background-color: #1c1d25;
+    height: 100vh;/* 100vh=100 percent of viewport height */ 
+    color: white;/*font-color */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    /*logo will always be on absolute left and ul will always be on absolute right*/
+    border-bottom: solid  white;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    /* to remove dots(like bullet points) of list items */
+    width: 500px;
+    justify-content: space-around;
+    font-size: 20px;
+}
+li{
+    width: auto;
+    text-decoration: none;
+}
+h1{
+    font-size: 50px;
+    margin:0px;
+    color:white;
+}
+p{
+    margin:0px;
+    font-weight: 300;
+    font-size:30px;
+}
+a{
+    text-decoration: none;
+}
+.hero-area{
+    margin:0px;
+    height: 80%; 
+    /* height of hero-area div =85% of height of its parent element*/
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+}
+.image-of-header{
+    width:fit-content;
+    height:100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text{
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+.button{
+    width: 150px;
+    height: 35px;
+    background-color: #ff7f50;
+    text-align: center;
+    border-radius: 40px;
+    font-weight: 300;
+    font-size:20px;
+    padding-top: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.button:hover{
+    /* when hovering, changing background color */
+    background-color: #ef744b;
+}
+.button:active{
+    /*when clicked it shows this effect and roll backs to previous normal effect*/
+    background-color: #A9A9A9;
+    color:#808080;
+}
+.socials{
+    padding-top:20px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.social{
+    height: 50px;
+    width: 50px;  
+    margin-right:5px;
+}
+.social :hover{
+    /* margin-right:8px; */
+    height:35px;
+    width:35px;
+}
+nav li a{
+    color:white;
+}
+nav li a:hover{
+    color:lightgray;
+}
+nav li a:active{
+    color:coral;
+}
+.logo{
+    height:50px;
+    margin: 10px;;
+}
+footer{
+    text-align: center;
+    background-color:#1c1d25;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height:100vh;
+    width:100%;
+}
+form{
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: medium;
+    border:solid white 1px;
+    border-radius: 25px;
+    height:80vh;
+    width: 70vw;
+}
+input{
+    text-decoration: none;
+    border-style: none;
+    width:60vw;
+    height: 30px;
+    border-radius: 5px;
+}
+textarea{
+    border-radius: 5px;
+    resize: vertical;
+    width: 60vw;
+    height:60px;
+    font-size: medium;
+    margin:0px;
+}
+footer p{
+    font-size: small;
+    margin-bottom: 0px;
+}
+/* if the screen width is smaller than or equal to 600px below media query works */
+@media only screen and (max-width: 580px) {
+    .about{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .about .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .hero-area{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items:flex-start;
+      width:90%;
+      height:80%;
+      padding-top: 20px;
+    }
+    .hero-area h1{
+        margin-top:0px;
+        font-size: x-large;
+    }
+    .hero-area h2{
+        margin-top:0px;
+        margin-bottom: 0px;
+        font-weight: lighter;
+        font-size: small;
+    }
+    .hero-area p{
+        font-size: large;
+    }
+    .hero-area .button{
+        margin:10px;
+        font-size: medium;
+    }
+  }
+  .about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* background-color: rgba(121, 54, 30, 0.887); */
+    align-items: center;
+  }
+  .about img{
+    width: 20vw;
+  }
+  .about p{
+    width: 70vw;
+    color: white;
+  }
+  .projects{
+    /* position:static; */
+    /* min-height:100vh; */
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+  .card{
+    background-color: lightblue;
+    border:solid white 1px; 
+    width: 250px;
+    height:130px;
+    border-radius:8px;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+  }
+  .card .side{
+    justify-self: center;
+    display: flex;
+    flex-direction:column;
+    justify-content:stretch;
+    align-items:stretch;
+    margin: 0px;
+  }
+  .card .side .button{
+    margin: 0px;
+    align-self: stretch;
+    font-size: medium;
+    border-radius:0px 0px 5px 0px ;
+    width: 100%;
+    height: 20%;
+  }
+  .card img{
+    border-radius: 8px;
+    margin: 0px;
+    width: 50%;
+    height: 100%;
+  }
+.card .side p{
+    font-size: x-small;
+    display: inline-flex;
+    background-color: beige;
+    align-self: stretch;
+    text-align: center;
+    /* margin-left:5px;
+    margin-right: 5px; */
+    width: 100%;
+    height:80%;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+}
+button a:hover{
+    /* when hovering, changing background color */
+    background-color: #ed5f22;
+    /* background-color: #ff7f50; */
+}
+.card .side button a:active{
+    /*when clicked it shows this effect and roll backs to previous normal effect*/
+    color:#808080;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* height: auto; */
+}
+.about .content{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
