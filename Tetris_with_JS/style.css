@@ -1,0 +1,92 @@
+:root
+{
+    --x: rgb(157, 220, 243);
+}
+.container{
+    display: flex;
+}
+.grid
+/* For main grid containing 200 cells */
+{
+    /* each row contains 10 cells.width of row=10*width_of_each_cell=10*20=200px
+    we have 20 rows in main grid. height_of_grid=20*height_of_each_cell=20*20=400
+    */
+    width: 220px;/*actual-width=200px, actual-height=400px*/
+    height: 440px;/*updated-height=400+40=440px (bcoz each div has 1px border on 2 sides so each contributes 2px to columnWidth), updated-width=220px(bcoz each div has 1px border on 2 sides so each contributes 2px to rowWidth*/
+    background-color: rgb(238, 238, 229);
+    /*Below 2 properties are used in order to  wrap up 200 divs within main div(grid)*/
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    border:2px solid rgb(183, 243, 185);
+}
+#start-button
+{
+    margin-bottom: 20px;
+    background-color: rgb(247, 164, 134);
+    border-radius: 5px;
+    /* margin: 2px; */
+    padding: 5px;
+    border-color: rgb(241, 228, 228);
+    border:solid;
+}
+.grid div
+/* for divs inside the main grid */
+{
+    width: 20px;
+    height: 20px;
+    border-radius:5px;
+    border:1px solid white;
+}
+.tetromino
+{
+    background-color: var(--x);
+    /* border-radius:5px; */
+    /* border-color: blanchedalmond; */
+    /* border-color: black;
+    border: solid; */
+}
+/* h3{
+    text-align:"center";
+}
+span{
+    text-align:"center";
+} */
+/* .center{
+    display:"inline-flexbox";
+    flex-direction: row;
+    text-align:"center";
+} */
+.side-container
+{
+    width: 200px;
+    height: 200px;
+    border:2px solid rgb(183, 243, 185);
+    margin-left: 20px;
+    border-radius: 5px;
+    /* display:flex; */
+    /* flex-wrap:nowrap; */
+}
+.mini-grid
+{
+    margin-left: 50px;/*to give space between main game div and mini-grid*/
+    /* margin-top: 150px; */
+    width: 88px;/*actual-width=80px, actual-height=80px*/
+    height: 88px;/*updated-height=80+8=440px (bcoz each div has 1px border on 2 sides so each contributes 2px to columnWidth), updated-width=220px(bcoz each div has 1px border on 2 sides so each contributes 2px to rowWidth*/
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(236, 236, 229);
+    border-radius: 5px;
+    border:2px solid rgb(183, 243, 185);
+}
+.mini-grid div{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border:1px solid white;
+}
+h3{
+    /* margin-left: auto;
+    margin-right: auto; */
+    align-items: center;
+}
