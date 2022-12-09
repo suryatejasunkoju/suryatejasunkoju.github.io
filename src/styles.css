@@ -209,6 +209,7 @@ footer p{
   }
   .about img{
     width: 20vw;
+    border-radius:50%;
   }
   .about p{
     width: 70vw;
