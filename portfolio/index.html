@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="src/styles.css "/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <title>Portfolio</title>
+        <meta charset="UTF-8" />
+        <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+    </head>
+    <body>
+        <header style="background-color:#1c1d25;">
+            <nav class="nav-bar" id="nav-bar">
+                <h1 style="color:coral;">{(👨‍💻);}</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Below line embedds google drive pdf. PDF can be seen by anyone on internet and no need to authenticate-->
+        <!-- <iframe src="https://drive.google.com/file/d/1k2e07UUy_CJs55NrRxmzrgh0rwwwZk_k/preview" width="640" height="480" allow="autoplay"></iframe> -->
+        <section class="hero" id="home">
+            <!--This section will have logo, navbar,name and role-->
+            
+            <div class="hero-area"><!--This div is to center the content(vertically) of inner div using flex-->
+                <div class="hero-text">
+                    <h2 style="font-size:'larger'">Hai👋 humans, This is</h2>
+                    <h1 id="target-baffle-text" class="data">Suryateja Sunkoju</h1>
+                    <p>Backend-developer</p> 
+                    <button onclick="openPDF()">View/Download Resume</button>
+                </div>
+                <div class="image-of-header">
+                    <img src="https://raw.githubusercontent.com/fengzhizi715/fengzhizi715/master/images/git-header.svg" width="300px" height="200px" alt="an image of git-header" />
+                </div>
+            </div>
+        </section>
+        <button class="go-to-top">
+            <a href="#nav-bar" target="_self" style="text-decoration:none;" ><p>^</p></a>
+        </button>
+        <section class="skills" id="skills">
+            <h1 class="title">Skills</h1>
+            <div class=" whole-container">
+                <div class="left-Container">
+                    <article>
+                        <h2>Solved DSA Problems</h2>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="logo" style="display:inline-block">
+                                            <a href="https://auth.geeksforgeeks.org/user/suryatejasunkoju/" target="_blank">
+                                                <!-- <svg role="img " xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
+                                                    <path fill="white" d="M29.035,24C29.014,23.671,29,23.339,29,23c0-6.08,2.86-10,7-10c3.411,0,6.33,2.662,7,7l2,0l0.001-9	L43,11c0,0-0.533,1.506-1,1.16c-1.899-1.066-3.723-1.132-6.024-1.132C30.176,11.028,25,16.26,25,22.92	c0,0.364,0.021,0.723,0.049,1.08h-2.099C22.979,23.643,23,23.284,23,22.92c0-6.66-5.176-11.892-10.976-11.892	c-2.301,0-4.125,0.065-6.024,1.132C5.533,12.506,5,11,5,11l-2.001,0L3,20l2,0c0.67-4.338,3.589-7,7-7c4.14,0,7,3.92,7,10	c0,0.339-0.014,0.671-0.035,1H0v2h1.009c1.083,0,1.977,0.861,1.999,1.943C3.046,29.789,3.224,32.006,4,33c1.269,1.625,3,3,8,3	c5.022,0,9.92-4.527,11-10h2c1.08,5.473,5.978,10,11,10c5,0,6.731-1.375,8-3c0.776-0.994,0.954-3.211,0.992-5.057	C45.014,26.861,45.909,26,46.991,26H48v-2H29.035z M11.477,33.73C9.872,33.73,7.322,33.724,7,32	c-0.109-0.583-0.091-2.527-0.057-4.046C6.968,26.867,7.855,26,8.943,26H19C18.206,30.781,15.015,33.73,11.477,33.73z M41,32	c-0.322,1.724-2.872,1.73-4.477,1.73c-3.537,0-6.729-2.949-7.523-7.73h10.057c1.088,0,1.975,0.867,2,1.954	C41.091,29.473,41.109,31.417,41,32z"></path>
+                                                </svg> -->
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdVHUvpMzlUKnxGtZSXcZ1XXZLxfu9hqc8BB77sNTcGjSbiLhLlqRpntUZhk222DQV9UM&usqp=CAU" alt="GFG image" width="48px" height="48px">
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="table-para">
+                                            GeeksForGeeks
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            80
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="logo" style="display:inline-block">
+                                            <a href="https://leetcode.com/sunkojusuryateja/" target="_blank">
+                                                <!-- <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff">
+                                                    <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+                                                </svg> -->
+                                                <img src="https://user-images.githubusercontent.com/36547915/97088991-45da5d00-1652-11eb-900f-80d106540f4f.png" alt="leetcode image" width="48px" height="48px">
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="table-para">
+                                            LeetCode
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            75
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                    <article>
+                        <h2>Completed Projects</h2>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="logo" style="display:inline-block; background-color:'white';">
+                                            <a href="https://github.com/suryatejasunkoju/UniversityManagementSystem" target="_blank">
+                                                <!-- <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                                                    <path fill="#F44336" d="M23.65,24.898c-0.998-1.609-1.722-2.943-2.725-5.455C19.229,15.2,31.24,11.366,26.37,3.999c2.111,5.089-7.577,8.235-8.477,12.473C17.07,20.37,23.645,24.898,23.65,24.898z"></path><path fill="#F44336" d="M23.878,17.27c-0.192,2.516,2.229,3.857,2.299,5.695c0.056,1.496-1.447,2.743-1.447,2.743s2.728-0.536,3.579-2.818c0.945-2.534-1.834-4.269-1.548-6.298c0.267-1.938,6.031-5.543,6.031-5.543S24.311,11.611,23.878,17.27z"></path><g><path fill="#1565C0" d="M32.084 25.055c1.754-.394 3.233.723 3.233 2.01 0 2.901-4.021 5.643-4.021 5.643s6.225-.742 6.225-5.505C37.521 24.053 34.464 23.266 32.084 25.055zM29.129 27.395c0 0 1.941-1.383 2.458-1.902-4.763 1.011-15.638 1.147-15.638.269 0-.809 3.507-1.638 3.507-1.638s-7.773-.112-7.773 2.181C11.683 28.695 21.858 28.866 29.129 27.395z"></path><path fill="#1565C0" d="M27.935,29.571c-4.509,1.499-12.814,1.02-10.354-0.993c-1.198,0-2.974,0.963-2.974,1.889c0,1.857,8.982,3.291,15.63,0.572L27.935,29.571z"></path><path fill="#1565C0" d="M18.686,32.739c-1.636,0-2.695,1.054-2.695,1.822c0,2.391,9.76,2.632,13.627,0.205l-2.458-1.632C24.271,34.404,17.014,34.579,18.686,32.739z"></path><path fill="#1565C0" d="M36.281,36.632c0-0.936-1.055-1.377-1.433-1.588c2.228,5.373-22.317,4.956-22.317,1.784c0-0.721,1.807-1.427,3.477-1.093l-1.42-0.839C11.26,34.374,9,35.837,9,37.017C9,42.52,36.281,42.255,36.281,36.632z"></path><path fill="#1565C0" d="M39,38.604c-4.146,4.095-14.659,5.587-25.231,3.057C24.341,46.164,38.95,43.628,39,38.604z"></path></g>
+                                                </svg> -->
+                                                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="java logo" width="48px" height="48px">
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="table-para">
+                                            Java
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            3
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="logo" style="display:inline-block">
+                                            <a href="https://suryatejasunkoju.github.io/Tetris_with_JS/index.html" target="_blank">
+                                                <!-- <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                                                    <path fill="#ffd600" d="M6,42V6h36v36H6z"></path><path fill="#000001" d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"></path>
+                                                </svg> -->
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="javascript logo" width="48px" height="48px">
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="table-para">
+                                            Javascript
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            1
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="logo" style="display:inline-block">
+                                            <a href="https://www.freecodecamp.org/certification/SuryatejaSunkoju/responsive-web-design" target="_blank">
+                                                <img src="https://cdn.changelog.com/uploads/icons/news_sources/Qo/icon_large.png?v=63680075631" width="48px" height="48px" margin="0px">
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="table-para">
+                                            FreeCodeCamp
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            5
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </div>
+                <article class="right">
+                    <h2>Skills</h2>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p class="table-para">
+                                        Java
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="inner-bar" data-value="80" data-size="80">
+
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="table-para">
+                                        OOPS
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="inner-bar" data-value="90" data-size="90">
+
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="table-para">
+                                        SQL
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="inner-bar" data-value="70" data-size="70">
+
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="table-para">
+                                        HTML
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="inner-bar" data-value="50" data-size="50">
+
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="table-para">
+                                        CSS
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="inner-bar" data-value="40" data-size="40">
+
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="table-para">
+                                        Javascript
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="inner-bar" data-value="50" data-size="50">
+
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <!--This section will have image, some text-->
+            <h1>About me</h1>   
+            <div class="content">
+                <img src="src/images/surya-pic.jpg" alt="Suryateja's pic" style="display: block;  box-shadow: 3px 1px 30px 1px whitesmoke;" width="350px" height="220px"/>
+                <p style="padding-left: 0px; display: inline-block; ">
+                    I am learning Java,SQL, DSA, html, css, javascript. I am passionate about technology💻, people👩👨, startups🚀 and books📚.
+                </p>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <!--This section will have contact info-->
+            <div class="container">
+                <h1>Projects</h1>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img src="src/images/tetris-image.jpg" width="130px"  height="130px" alt="image1"/>
+                    <div class="side">
+                        <!-- <p style="display: block; margin:0%; padding:0%;">Tetris Game</p> -->
+                        <span style="text-align: center;">Tetris Game with JS</span>
+                        <p>Built using HTML, CSS and Javascript.</p>
+                        <div class="button">
+                            <a href="https://suryatejasunkoju.github.io/Tetris_with_JS/index.html" target="_blank">view👀</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="src/images/dev-high-resolution-logo-color-on-transparent-background.png" width="130px"  height="130px" alt="image1"/>
+                    <div class="side">
+                        <span style="text-align: center;">SuperMario Game with JS</span>
+                        <p>Built using HTML, CSS and Javascript (Kaboom.js).</p>
+                        <div class="button">
+                            <a href="www.github.com" target="_blank">view👀</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="src/images/dev-high-resolution-logo-color-on-transparent-background.png" width="130px"  height="130px" alt="image1"/>
+                    <div class="side">
+                        <span style="text-align: center;">University Management System</span>
+                        <p>Built using Java(Swing),SQL.</p>
+                        <div class="button">
+                            <a href="www.github.com" target="_blank">view👀</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="src/images/dev-high-resolution-logo-color-on-transparent-background.png" width="130px"  height="130px" alt="image1" />
+                    <div class="side">
+                        <span style="text-align: center;">Basic TextEditor</span>
+                        <p>Built using Java(Swing)</p>
+                        <div class="button">
+                            <a href="https://github.com/suryatejasunkoju/Basic-TextEditor-with-java" target="_blank" target="_blank">view👀</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="src/images/dev-high-resolution-logo-color-on-transparent-background.png" width="130px"  height="130px" alt="image1" target="_blank"/>
+                    <div class="side">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="button">
+                            <a href="www.github.com" target="_blank">view👀</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="src/images/dev-high-resolution-logo-color-on-transparent-background.png" width="130px"  height="130px" alt="image1"/>
+                    <div class="side">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="button">
+                            <a href="www.github.com" target="_blank">view👀</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="src/images/dev-high-resolution-logo-color-on-transparent-background.png" width="130px"  height="130px" alt="image1"/>
+                    <div class="side">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="button">
+                            <a href="www.github.com" target="_blank">view👀</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="connect">
+            <form action="https://formsubmit.co/sunkojusuryateja@gmail.com" method="POST">
+                <h1>Connect</h1>
+                <input type="text" placeholder=" NAME" required>
+                <input type="email" placeholder=" EMAIL" required>
+                <input type="text" placeholder=" SUBJECT">
+                <textarea placeholder=" MESSAGE"></textarea>
+                <button type="submit"><p>Send Mail📧</p></button>
+            </form>
+                <div class="socials">
+                    <div  class="logo social">
+                        <a href="https://twitter.com/">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="30" height="30" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-.139 9.237c.209 4.617-3.234 9.765-9.33 9.765-1.854 0-3.579-.543-5.032-1.475 1.742.205 3.48-.278 4.86-1.359-1.437-.027-2.649-.976-3.066-2.28.515.098 1.021.069 1.482-.056-1.579-.317-2.668-1.739-2.633-3.26.442.246.949.394 1.486.411-1.461-.977-1.875-2.907-1.016-4.383 1.619 1.986 4.038 3.293 6.766 3.43-.479-2.053 1.08-4.03 3.199-4.03.943 0 1.797.398 2.395 1.037.748-.147 1.451-.42 2.086-.796-.246.767-.766 1.41-1.443 1.816.664-.08 1.297-.256 1.885-.517-.439.656-.996 1.234-1.639 1.697z"/></svg> -->
+                            <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="twitter logo" width="40px" height="40px">
+                        </a>
+                    </div>
+                    <div class="logo social">
+                        <a href="https://www.linkedin.com/in/sunkoju-suryateja-547a7316a/">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="30" height="30" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg> -->
+                            <img src="https://png.pngtree.com/element_our/md/20180626/md_5b321c9756fc6.jpg" alt="linkedin logo" width="40px" height="40px">
+                        </a>
+                    </div>
+                    <div class="logo social">
+                        <a href="http://github.com/suryatejasunkoju">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="30" height="30" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg> -->
+                            <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="github logo" width="40px" height="40px">
+                        </a>
+                    </div>
+                </div>
+            <p>With ❤️️ Suryateja Sunkoju</p>
+        </footer>
+        <script src="src/app.js"></script>
+        <!-- without type="module" we can't use import, export in js file -->
+    </body>
+</html>
+
+
