@@ -1,13 +1,46 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins', sans-serif;
     margin:0px;
     width:100%;
+    padding: 0%;
+    box-sizing: border-box;
 }
 section{
-    height: 100vh;
+    min-height: 100vh;
     background-color: #1c1d25;
-    border:solid white 1px;
+    /* border:solid white 1px; */
     /*line-wwidth, border-color, border-width*/
+}
+.nav-bar{
+    position: sticky;
+    top:0; 
+    left:0; 
+    right: 0;
+}
+.go-to-top{
+    position:fixed;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius:5px;
+    padding: 0%;
+    padding-top: 5px;
+    background-color:black;
+    box-shadow: 3px 1px 30px 1px whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    right:10px;
+    bottom:10px;
+    z-index: 99999;
+}
+.go-to-top a{
+    color: white;
+}
+.go-to-top:hover{
+    bottom:11px;
 }
 .hero{
     background-color: #1c1d25;
@@ -18,7 +51,7 @@ nav{
     display: flex;
     justify-content: space-between;
     /*logo will always be on absolute left and ul will always be on absolute right*/
-    border-bottom: solid  white;
+    border-bottom:solid white;
 }
 nav ul{
     display: flex;
@@ -48,13 +81,13 @@ a{
 .hero-area{
     margin:0px;
     height: 80%; 
-    /* height of hero-area div =85% of height of its parent element*/
     display: flex;
-    justify-content: space-around;
-    align-items:center ;
+    justify-content: space-between;
+    align-items:center;
+    padding-right: 30px;
 }
 .image-of-header{
-    width:fit-content;
+    width:300px;
     height:100%;
     display: flex;
     flex-direction:row;
@@ -65,10 +98,24 @@ a{
     margin-left: 40px;
     margin-bottom: 50px;
 }
+button{
+    background-color: coral;
+    border: none;
+    color:white;
+    font-size: large;
+    font-weight:normal;
+    border-radius: 25px;
+    padding:10px;   
+    width: fit-content;
+}
+button:hover{
+    color:#dddddd;
+}
 .button{
     width: 150px;
     height: 35px;
     background-color: #ff7f50;
+    color:white;
     text-align: center;
     border-radius: 40px;
     font-weight: 300;
@@ -77,15 +124,15 @@ a{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.button:hover{
-    /* when hovering, changing background color */
+/* .button:hover{
+    /* when hovering, changing background color 
     background-color: #ef744b;
-}
-.button:active{
-    /*when clicked it shows this effect and roll backs to previous normal effect*/
+} */
+/* .button:active{
+    /*when clicked it shows this effect and roll backs to previous normal effect
     background-color: #A9A9A9;
     color:#808080;
-}
+} */
 .socials{
     padding-top:20px;
     height: auto;
@@ -97,19 +144,21 @@ a{
     height: 50px;
     width: 50px;  
     margin-right:5px;
+    /* margin-top:0px;
+    margin-bottom:0px; */
 }
 .social :hover{
     /* margin-right:8px; */
     height:35px;
     width:35px;
 }
-nav li a{
+a{
     color:white;
 }
-nav li a:hover{
+a:hover{
     color:lightgray;
 }
-nav li a:active{
+a:active{
     color:coral;
 }
 .logo{
@@ -128,7 +177,7 @@ footer{
     width:100%;
 }
 form{
-    margin-top:20px;
+    margin-top:50px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -171,33 +220,34 @@ footer p{
         flex-direction: column;
         justify-content: flex-start;
         flex-wrap: wrap;
+        padding:20px;
     }
     .hero-area{
       display: flex;
-      flex-direction: column;
+      /* flex-direction: column; */
       justify-content: space-between;
-      align-items:flex-start;
+      /* align-items:flex-start; */
       width:90%;
       height:80%;
       padding-top: 20px;
     }
     .hero-area h1{
         margin-top:0px;
-        font-size: x-large;
+        font-size: 40px;
     }
     .hero-area h2{
         margin-top:0px;
         margin-bottom: 0px;
         font-weight: lighter;
-        font-size: small;
+        font-size: 30px;
     }
     .hero-area p{
-        font-size: large;
+        font-size: 22px;
     }
-    .hero-area .button{
+    /* .hero-area .button{
         margin:10px;
         font-size: medium;
-    }
+    } */
   }
   .about{
     display: flex;
@@ -209,7 +259,7 @@ footer p{
   }
   .about img{
     width: 20vw;
-    border-radius:50%;
+    border-radius: 50%;
   }
   .about p{
     width: 70vw;
@@ -237,10 +287,10 @@ footer p{
     width: 250px;
     height:130px;
     border-radius:8px;
-    margin-left:10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-left:20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction:row;
     justify-content: flex-start;
@@ -278,7 +328,7 @@ footer p{
     width: 100%;
     height:80%;
 }
-.button a{
+button a{
     text-decoration: none;
     color: white;
 }
@@ -295,12 +345,160 @@ button a:hover{
 .about{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content:space-evenly;
     align-items: center;
-    /* height: auto; */
 }
 .about .content{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-around;
+    align-items: flex-start;
+}
+.about .content p{
+    /* width:60%; */
+}
+
+.whole-container{
+    /* height: fit-content; */
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+.title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.left-Container{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border:solid lightblue 2px; */
+    border-radius: 25px;
+    width: 500px;
+    height: 400px;
+}
+article{
+    /* border:solid white 2px; */
+    color:white;
+    margin:5px;
+    width: 450px;
+    height: 400px;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+}
+article .right{
+    height: 150px;
+}
+article .social{
+    margin:0px;
+}
+article h2{
+    padding-top: 0%;
+    padding-bottom: 0%;
+    color: #FB6894 ;
+}
+button{
+    height: fit-content;
+    width: fit-content; 
+    padding:10px; 
+    background-color:coral; 
+    color: white; 
+    border-radius: 25px; 
+    border:"none";
+    margin-top:20px;
+    margin-bottom:10px
+}
+button p{
+    margin:0px;
+    font-weight: 50;
+    font-size:20px;
+    padding-left: 2px;
+    padding-right:2px;
+}
+button :hover{
+    color:#dddddd;
+    /* font-weight:200; */
+}
+table{
+    width:300px;
+    height: fit-content;
+    margin:0px;
+}
+table tr{
+    margin:0px;
+    padding:0px;
+}
+table tr td{
+    align-items: center;
+    padding-left:5px;
+    padding-right: 5px;
+}
+section .skills{
+    height:fit-content;
+    width:100%;
+}
+.skills article h2{
+    color: #fff;
+    text-shadow: 5px 6px 9px coral;
+    /* text-shadow: 2px 2px 5px red; */
+}
+article h2{
+    margin:10px;
+    font-weight:100;
+}
+h2{
+    font-size: 30px;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:0px;
+    margin-right:0px;
+    font-weight: 0;
+}
+p{
+    font-size: 25px;
+}
+.right table tr{
+    height: 50px;
+}
+.progress-bar{
+    width:300px;
+    height:10px;
+    /* background-color:white; */
+    background-color: black;
+    border-radius:20px;
+    position: relative;
+    box-shadow: 2px 1px 3px 1px white;
+}
+.inner-bar{
+    background-color:rgb(241, 116, 155);
+    /* background-color: #808080; */
+    border-radius: 20px;
+    height:10px;
+    width:5%;
+    position: absolute;
+    transition: width 1.8s ease-in;
+}
+.first{
+    width:1%;
+    height:10px;
+    background-color: white;
+}
+.table-para{
+    font-size: 20px;
+}
+.logo{
+    margin:0px;
+}
+.logo img{
+    border-radius:50%;
+}
+.logo img:hover{
+    border-radius:0%;
 }
