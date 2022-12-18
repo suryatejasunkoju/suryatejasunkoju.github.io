@@ -230,7 +230,12 @@ footer p{
         display: none;
     }
     /* displaying hamburger menu */
-
+    .hamburger .bar{
+        display:block;
+        width:20px;
+        height: 3px;
+        margin:5px;
+    }
     td > .progress-bar{
         height:7px;
         width:200px;
