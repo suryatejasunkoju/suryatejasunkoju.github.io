@@ -228,6 +228,8 @@ footer p{
     .nav-bar ul{
         display: none;
     }
+    /* displaying hamburger menu */
+    
     td > .progress-bar{
         height:7px;
         width:200px;
