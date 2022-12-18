@@ -233,6 +233,9 @@ footer p{
       height:80%;
       padding-top: 20px;
     }
+    .hero-area > .image-of-header{
+        width:100%;
+    }
     .hero-area h1{
         margin-top:0px;
         font-size: 40px;
