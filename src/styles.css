@@ -235,6 +235,9 @@ footer p{
         margin:0px;
         margin-top: 10px;
         margin-bottom: 10px;
+        width:100%;
+        height: fit-content;
+        padding: 0px;
     }
     .about .content{
         display: flex;
