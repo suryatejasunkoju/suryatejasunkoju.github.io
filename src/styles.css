@@ -230,7 +230,8 @@ footer p{
     .about .content{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        align-items: center;
+        justify-content: space-around;
         /* flex-wrap: wrap; */
         padding:20px;
     }
