@@ -223,8 +223,8 @@ footer p{
     .about .content{
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        flex-wrap: wrap;
+        justify-content: space-evenly;
+        /* flex-wrap: wrap; */
         padding:20px;
     }
     .hero-area{
