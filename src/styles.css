@@ -212,7 +212,7 @@ footer p{
 @media only screen and (max-width: 580px) {
     .progress-bar{
         height:7px;
-        width:250px;
+        width:200px;
     }
     .about{
         display: flex;
