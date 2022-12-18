@@ -7,6 +7,13 @@ body{
     width:100%;
     padding: 0%;
     box-sizing: border-box;
+    position: relative;
+}
+header{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100%;
 }
 section{
     min-height: 100vh;
