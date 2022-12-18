@@ -225,11 +225,16 @@ footer p{
         height:7px;
         width:200px;
     }
-    .about{
+    /* .about{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         flex-wrap: wrap;
+    } */
+    .about h2{
+        margin:0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .about .content{
         display: flex;
