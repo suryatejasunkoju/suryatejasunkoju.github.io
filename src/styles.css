@@ -439,7 +439,7 @@ article .right{
 }
 article .right h2{
     text-align: center;
-    display: block;
+    display: inline-block;
 }
 article .social{
     margin:0px;
