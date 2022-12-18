@@ -244,6 +244,11 @@ footer p{
         flex-wrap: wrap;
         padding:20px;
     }
+    .about img{
+        padding:0px;
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
     .hero-area{
       display: flex;
       flex-direction: row;
