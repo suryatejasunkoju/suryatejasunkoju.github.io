@@ -216,8 +216,8 @@ footer p{
     }
     .about{
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
     .about .content{
