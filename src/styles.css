@@ -16,6 +16,8 @@ header{
     width:100%;
     height:80px;
     background: #1c1d25;
+    opacity: 1;
+    /* opacity=inverse of transparency. Higher the opacity, lower the transparency. Range of values of opacity is from 0.00 to 1.00 */
 }
 section{
     min-height: 100vh;
