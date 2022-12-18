@@ -8,6 +8,7 @@ body{
     padding: 0px;
     box-sizing: border-box;
     position: relative;
+    overflow: hidden;
 }
 header{
     position: fixed;
