@@ -21,6 +21,7 @@ header{
 }
 section{
     min-height: 100vh;
+    width: 100%;
     background-color: #1c1d25;
     display: block;
     /* border:solid white 1px; */
