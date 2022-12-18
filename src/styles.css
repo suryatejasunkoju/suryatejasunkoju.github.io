@@ -227,7 +227,7 @@ footer p{
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
       /* align-items:flex-start; */
       width:90%;
       height:80%;
