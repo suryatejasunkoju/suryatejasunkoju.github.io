@@ -224,6 +224,10 @@ footer p{
 }
 /* if the screen width is smaller than or equal to 600px below media query works */
 @media only screen and (max-width: 580px) {
+    /* removing navbar */
+    .nav-bar{
+        display: none;
+    }
     td > .progress-bar{
         height:7px;
         width:200px;
