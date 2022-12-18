@@ -5,7 +5,7 @@ body{
     font-family: 'Poppins', sans-serif;
     margin:0px;
     width:100%;
-    padding: 0%;
+    padding: 0px;
     box-sizing: border-box;
     position: relative;
 }
@@ -110,6 +110,7 @@ a{
 .hero-text{
     margin-left: 40px;
     margin-bottom: 40px;
+    padding:0px;
 }
 button{
     background-color: coral;
