@@ -33,6 +33,7 @@ section{
     top:0; 
     left:0; 
     right: 0;
+    width:100%;
 }
 .go-to-top{
     position:fixed;
@@ -228,6 +229,7 @@ footer p{
     /* removing navbar */
     .nav-bar ul{
         display: none;
+        width:0px;
     }
     /* displaying hamburger menu */
     .hamburger .bar{
