@@ -243,12 +243,10 @@ footer p{
         height:7px;
         width:200px;
     }
-    /* .about{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    } */
+    article{
+        width:auto;
+        height:400px;
+    }
     .about h2{
         margin:0px;
         margin-top: 10px;
