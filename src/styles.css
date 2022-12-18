@@ -437,6 +437,9 @@ article{
 article .right{
     height: 150px;
 }
+article .right h2{
+    text-align: center;
+}
 article .social{
     margin:0px;
 }
