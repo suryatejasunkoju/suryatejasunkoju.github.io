@@ -225,7 +225,8 @@ footer p{
     }
     .hero-area{
       display: flex;
-      /* flex-direction: column; */
+      flex-direction: column;
+      flex-wrap: wrap;
       justify-content: space-between;
       /* align-items:flex-start; */
       width:90%;
