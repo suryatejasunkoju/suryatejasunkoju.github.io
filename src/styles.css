@@ -7,7 +7,7 @@ body{
     width:100%;
     padding: 0px;
     box-sizing: border-box;
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
 }
 header{
@@ -26,11 +26,12 @@ section{
     background-color: #1c1d25;
     display: block;
     position: relative;
+
     /* border:solid white 1px; */
     /*line-wwidth, border-color, border-width*/
 }
 .nav-bar{
-    /* position: sticky; */
+    position: absolute;
     top:0; 
     left:0; 
     right: 0;
