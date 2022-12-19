@@ -30,7 +30,7 @@ section{
     /*line-wwidth, border-color, border-width*/
 }
 .nav-bar{
-    position: sticky;
+    /* position: sticky; */
     top:0; 
     left:0; 
     right: 0;
@@ -540,7 +540,7 @@ p{
     border-radius: 20px;
     height:10px;
     width:5%;
-    position: absolute;
+    /* position: absolute; */
     transition: width 1.8s ease-in;
 }
 .first{
