@@ -25,7 +25,7 @@ section{
     width: 100%;
     background-color: #1c1d25;
     display: block;
-    position: relative;
+    /* position: relative; */
 
     /* border:solid white 1px; */
     /*line-wwidth, border-color, border-width*/
@@ -38,7 +38,7 @@ section{
     width:100%;
 }
 .go-to-top{
-    position:fixed;
+    position:sticky;
     display: block;
     width: 25px;
     height: 25px;
