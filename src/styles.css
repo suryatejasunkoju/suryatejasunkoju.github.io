@@ -238,6 +238,9 @@ footer p{
         height: 3px;
         margin:5px;
     }
+    td{
+        width:auto;
+    }
     td > .progress-bar{
         height:7px;
         width:200px;
