@@ -240,7 +240,12 @@ footer p{
     }
     td > .progress-bar{
         height:7px;
-        width:200px;
+        width:180px;
+    }
+    td > div > a > img{
+        width:35px;
+        height:35px;
+        padding:0px;
     }
     article{
         width:auto;
@@ -494,8 +499,6 @@ table tr{
 }
 table tr td{
     align-items: center;
-    /* padding-left:5px;
-    padding-right: 5px; */
 }
 section .skills{
     height:fit-content;
