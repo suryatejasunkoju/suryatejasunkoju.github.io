@@ -259,6 +259,8 @@ footer p{
     article{
         width:100vw;
         height:400px;
+        margin:0px;
+        padding:0px;
     }
     .about h2{
         margin:0px;
