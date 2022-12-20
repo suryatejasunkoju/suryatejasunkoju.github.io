@@ -238,6 +238,12 @@ footer p{
         height: 3px;
         margin:5px;
     }
+    .left-Container > article{
+        width:90vw;
+        height:fit-content;
+        margin:0px;
+        padding:0px;
+    }
     table{
         width:380px;
         height: auto;
@@ -254,12 +260,6 @@ footer p{
     td > div > a > img{
         width:35px;
         height:35px;
-        padding:0px;
-    }
-    article{
-        width:80vw;
-        height:400px;
-        margin:0px;
         padding:0px;
     }
     .about h2{
