@@ -238,6 +238,11 @@ footer p{
         height: 3px;
         margin:5px;
     }
+    table{
+        width:380px;
+        height: auto;
+        align-items: center;
+    }
     td{
         margin:0px;
         padding:0px;
