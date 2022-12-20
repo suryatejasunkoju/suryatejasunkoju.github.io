@@ -424,9 +424,9 @@ button a:hover{
     justify-content:space-around;
     align-items: flex-start;
 }
-.about .content p{
-    /* width:60%; */
-}
+/* .about .content p{
+    width:60%;
+} */
 
 .whole-container{
     /* height: fit-content; */
