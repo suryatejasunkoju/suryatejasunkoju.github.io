@@ -36,8 +36,8 @@ section{
     opacity: 1;
 }
 .go-to-top{
-    position:fixed;
-    display: block;
+    /* position:fixed; */
+    display: none;
     width: 25px;
     height: 25px;
     border-radius:5px;
