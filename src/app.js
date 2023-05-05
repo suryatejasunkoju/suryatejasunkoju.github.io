@@ -1,6 +1,6 @@
 // code to open resume pdf in google drive
 function openPDF(){
-    window.open("https://drive.google.com/file/d/1vWMwbfIETtdl2GB5m3uvOeTPUDW2WQYn/view?usp=share_link",'_blank');
+    window.open("https://drive.google.com/file/d/15bn9ZMhI9I2BpnUf95m5W529SwgYVqd8/view?usp=share_link",'_blank');
 }
 
 //baffle animation
